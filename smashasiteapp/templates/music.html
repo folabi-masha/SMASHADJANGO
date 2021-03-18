@@ -1,0 +1,61 @@
+{% load static %}
+
+<!doctype html>
+<html>
+
+<head>
+	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-mtS696VnV9qeIoC8w/PrPoRzJ5gwydRVn0oQ9b+RJOPxE1Z1jXuuJcyeNxvNZhdx" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+
+	<title>{% block title %} {% endblock %}</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-light bg-dark ">
+		<div>
+			<a href="home.html">
+				<img src="{% static 'images/thelogo.png' %}" height="50"></a>
+			<a href="music.html" style="padding-left: 20px"><b>MUSIC</b></a>
+			<a href="contact.html" style="padding-left: 20px"><b>CONTACT</b></a>
+		</div>
+		<div class="form" align="right">
+			<form style="padding-left: 550px;" action="/" method="POST">
+				<input type="text" name="email" id="email" placeholder="Join Mailing List">
+				<input type="submit" value="Add email">
+			</form>
+		</div>
+		<div>
+			<a href="https://open.spotify.com/artist/0JTdGWLVRfvLmrXmwgdlnn">
+				<img src="{% static 'images/SP.png' %}">
+			</a>
+			<a href="https://www.facebook.com/OfficialSmasha/">
+				<img src="{% static 'images/FB.png' %}">
+			</a>
+			<a href="https://www.instagram.com/officialsmasha/">
+				<img src="{% static 'images/IG.png' %}">
+			</a>
+			<a href="https://www.youtube.com/channel/UCSJg5Agz375JSDyI5gvujgQ">
+				<img src="{% static 'images/YT.png' %}">
+			</a>
+		</div>
+	</nav>
+
+	<h2 style="padding-top: 20px; padding-left: 410px"><b>MUSIC</b></h2>
+	<div id="Music" align="center" style="padding-left: 100px;">
+		
+
+		<div style="padding-bottom: 20px; padding-top: 20px" >
+			<iframe src="https://open.spotify.com/embed/album/1o2G0kVzyWhJXG8jlnS8nD" width="560" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		</div>
+		<div style="padding-bottom: 20px">
+			<iframe src="https://open.spotify.com/embed/album/1xeGfCjso91Z7JQmRnV3ua" width="560" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		</div>
+	<!-- 	<div align="center">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/cW1tUqEhi58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div> -->
+		<!-- <h2 style="text-align: center"><b>Beats</b></h2> -->
+		<div style="padding-top:20px; padding-bottom: 20px">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL8PV9a1ER8ZgR2e5wO5plk7yAmlS5UI0n" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+
